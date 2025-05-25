@@ -1,0 +1,172 @@
+{
+      "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "volumeData",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "volume24HrInUSD",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "volume24HrInBaseToken",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "volume24HrInQuoteToken",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastUpdatedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiresAt",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "volumeDataByV3Pool",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "volume24HrInUSD",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "volume24HrInBaseToken",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "volume24HrInQuoteToken",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastUpdatedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiresAt",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_volume24HrInUSD",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_volume24HrInBaseToken",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_volume24HrInQuoteToken",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_v3PoolAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setVolumeData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_v3PoolAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getVolumeData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "volume24HrInUSD",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "volume24HrInBaseToken",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "volume24HrInQuoteToken",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastUpdatedAt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "expiresAt",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct VolumeOracle.VolumeData",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    }
+  ]
+}
