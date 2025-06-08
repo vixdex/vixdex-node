@@ -116,6 +116,7 @@ router.post("/uniswapV3/pool/oracle", async (req, res) => {
         const data = await response.json();
         let volumeInUSD =data.data.attributes.volume_usd.h24;
         let volumeInBaseToken = volumeInUSD/(data.data.attributes.base_token_price_usd);
+        let volumeInQuoteToken = volumeInUSD/(data.data.attributes.quote_token_price_usd);
         let tx = await oracleContract.setVolumeData(
             Math.floor(volumeInUSD),
             Math.floor(volumeInBaseToken), 
