@@ -28,7 +28,7 @@ contract VolumeOracle{
         uint256 _volume24HrInQuoteToken,
         address _v3PoolAddress
     
-    ) public {
+    ) onlyOwner public {
     
 
         volumeDataByV3Pool[_v3PoolAddress] =  VolumeData(
